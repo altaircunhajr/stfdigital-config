@@ -1,0 +1,4 @@
+eureka:
+  instance:
+    preferIpAddress: false
+    hostname: recebimento

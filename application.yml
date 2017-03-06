@@ -1,0 +1,51 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:${spring.application.name};MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password: 
+  jpa:
+    hibernate:
+      ddl-auto: none
+      use-new-id-generator-mappings: true
+  rabbitmq:
+    host: rabbit
+    port: 5672
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://identidades:8095/user
+      filter-order: 3
+
+management:
+  contextPath: /manage
+  security.enabled: false
+  
+http:
+  client:
+    ssl:
+      trust-store: shared/truststores/truststore.jks
+      trust-store-password: changeit
+
+eureka:
+  instance:
+    preferIpAddress: true
+    statusPageUrlPath: ${management.contextPath}/info
+    healthCheckUrlPath: ${management.contextPath}/health
+  client: 
+    serviceUrl:
+      defaultZone: http://discovery:8761/eureka/
+    healthcheck:
+      enabled: true
+    
+flyway:
+  validate-on-migrate: false
+  table: SCHEMA_VERSION
+  url: ${spring.datasource.url}
+  user: ${spring.datasource.username}
+  password: ${spring.datasource.password}  
+  custom-migration.enabled: true # Ativa a migração usando spring beans no core
+  
+hystrix.command.default.execution.isolation:
+  strategy: SEMAPHORE
+  thread.timeoutInMilliseconds: 10000

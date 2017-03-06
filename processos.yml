@@ -1,0 +1,10 @@
+server:
+  port: 8081
+  
+spring.data.elasticsearch:
+  cluster-name: elasticsearch
+  cluster-nodes: elasticsearch:9300
+  repositories.enabled: true
+  properties:
+    http.enabled: false
+    node.local: false

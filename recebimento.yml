@@ -1,0 +1,6 @@
+server:
+  port: 8091
+  
+spring.data.elasticsearch.cluster-nodes: elasticsearch:9300
+
+flyway.custom-migration.enabled: true
