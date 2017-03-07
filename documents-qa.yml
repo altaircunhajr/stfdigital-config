@@ -10,7 +10,7 @@ spring:
     cassandra:
       contact-points: bd-csnd-stfdigitalq
       username: usuariodocuments
-      password: qcsnd%usuariodocuments      
+      password: AQAPGOGpS3HVlLLqmd5Yj5OLBshexfvHFgBULadLD+4zKxQBpS/ctLW0Ra44k/9ZdR761szaf5H/CXKWP1jd7KgBWsw1NMrAa7Mo06TzEZiuj277YKWjX7aFCkTg8UIEbdTJh77ol/A/brWDUxZIKIiiZTs3m+/Bgywzb0RT3QBN74CcH5kWWw/4507hqRCOLhnIBzeMNiDNk6y9Thl2DVduOD47G4JDgxJ0v4g4UKAEU7TJ21MlaE/9Wb65KYCHHsQLxpz3IOrOMts1HnI6WeI+wciJlyCt9TQf6WdvVpxvxduetJH/qqkn3nHUOAvXRJb0t3ONb2dL+DkOldWI1NzGXv6UbIqPY7ciDcxRBs+QClxgub69aHZDOCqelntoKyZyyY6a8ywzZA7lEyewjmVg
 onlyoffice: 
   server:
     address: https://onlyofficet.stf.jus.br
