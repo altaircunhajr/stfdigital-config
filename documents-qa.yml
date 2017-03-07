@@ -1,6 +1,30 @@
-spring:
+spring: 
+  datasource:
+    url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/stfdigitalq
+    username: usuariodocuments
+    password: 123
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
   data:
     cassandra:
       contact-points: bd-csnd-stfdigitalq
       username: usuariodocuments
-      password: '{cipher}d975a0f19f777747597c3af559010f9ba92f06b6b062e6e3fe3cf99c4e6699045ad52370492570901317bba358e8c083'
+      password: qcsnd%usuariodocuments      
+onlyoffice: 
+  server:
+    address: https://onlyofficet.stf.jus.br
+  integration:
+    address: https://onlyofficet.stf.jus.br
+    port: 443
+  documentserver:
+    host: digitalq.stf.jus.br
+    port: 30790
+
+flyway: 
+  url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/stfdigitalq
+  user: flywaydocuments
+  password: 123
+  locations: 
+   - classpath:db/migration
+   - classpath:db/structure/flyway/callbacks

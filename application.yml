@@ -49,3 +49,10 @@ flyway:
 hystrix.command.default.execution.isolation:
   strategy: SEMAPHORE
   thread.timeoutInMilliseconds: 10000
+
+encrypt:
+  keyStore:
+    location: shared/truststores/truststore.jks
+    password: changeit
+    alias: stfdigital
+    secret: changeit
