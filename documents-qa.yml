@@ -1,0 +1,6 @@
+spring:
+  data:
+    cassandra:
+      contact-points: bd-csnd-stfdigitalq
+      username: usuariodocuments
+      password: '{cipher}d975a0f19f777747597c3af559010f9ba92f06b6b062e6e3fe3cf99c4e6699045ad52370492570901317bba358e8c083'
