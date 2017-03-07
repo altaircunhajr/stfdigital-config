@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:oracle:thin:@bd-orcl-stfdigitalh:1521/pdb_autuacao
+    url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/pdb_autuacao
     username: usuarioautuacao
     password: 123
     initialize: false
@@ -10,7 +10,7 @@ spring:
     database-schema: activitiautuacao
     
 flyway:
-  url: jdbc:oracle:thin:@bd-orcl-stfdigitalh:1521/pdb_autuacao
+  url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/pdb_autuacao
   user: flywayautuacao
   password: 123
   locations:
