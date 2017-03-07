@@ -1,2 +1,6 @@
 server:
   port: 8095
+
+spring:
+  datasource:
+    username: '{cipher}AQAL20lqg+fNOT3aRefgIs/6C0I6aOH+k1K6K+TLH8F5gjCFzXMRt6PGOrN4pR9KAfBvF6pVl/Cb22w5RBsrjYAp7+4QIHswlf4p2rpEQY7Pa9PABUaGr/n44+geTT4M6FNfT/DrNPhkTFAK4fcoD8PeIYj5Wa8Y03wC4x9xE/4X3wPZXhF+HvIXnvrvHg3OouPjKORXP3KQmKSVDmifwX2DHIxeZ/ePW1z3+7qX57sBEe/D/pk8QFC4d/PttvH4wAQZU3EBVMZk22nCyYc/eAqNrZYjS2aXDIeRX4p1bgfBE0VxVOpv3ib/Y0BB+ZqtxhfLsu1Mre5cAdwqbTIKP3LtuS/z+sKDThJ6gyd9y1aWZGuuDtX+0cWQNiPsLn9+WNY='
