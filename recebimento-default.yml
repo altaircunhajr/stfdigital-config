@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@stfdigital:1521/poc
+    username: usuariorecebimento
+    password: 123
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+  activiti:
+    database-schema: recebimento
+    database-schema-update: true
+    
+flyway:
+  url: jdbc:oracle:thin:@stfdigital:1521/poc
+  user: flywayrecebimento
+  password: 123

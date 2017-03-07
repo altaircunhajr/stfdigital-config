@@ -1,0 +1,24 @@
+spring: 
+  datasource:
+    url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/stfdigitalq
+    username: usuariodocuments
+    password: 123
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+onlyoffice: 
+  server:
+    address: https://onlyofficet.stf.jus.br
+  integration:
+    address: https://onlyofficet.stf.jus.br
+    port: 443
+  documentserver:
+    host: https://digitalq.stf.jus.br
+
+flyway: 
+  url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/stfdigitalq
+  user: flywaydocuments
+  password: 123
+  locations: 
+  - classpath:db/migration
+  - classpath:db/structure/flyway/callbacks

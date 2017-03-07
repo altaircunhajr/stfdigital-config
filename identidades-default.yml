@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/stfdigitalq
+    username: usuarioidentidades
+    password: 123
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+    
+flyway:
+  url: jdbc:oracle:thin:@bd-orcl-stfdigitalq:1521/stfdigitalq
+  user: flywayidentidades
+  password: 123
+  locations:
+  - classpath:db/migration
+  - classpath:db/structure/flyway/callbacks
