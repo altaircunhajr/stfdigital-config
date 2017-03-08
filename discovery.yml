@@ -2,7 +2,7 @@ server:
   port: 8761
 
 eureka:
-  shouldBatchReplication:true
+  shouldBatchReplication: true
   server:
     enable-self-preservation: false
   instance:
