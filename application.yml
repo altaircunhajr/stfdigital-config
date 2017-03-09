@@ -37,8 +37,6 @@ eureka:
       defaultZone: http://discovery:8761/eureka/
     healthcheck:
       enabled: true
-	  
-    
 flyway:
   validate-on-migrate: false
   table: SCHEMA_VERSION
