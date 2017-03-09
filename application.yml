@@ -34,7 +34,7 @@ eureka:
     healthCheckUrlPath: ${management.contextPath}/health
   client: 
     serviceUrl:
-      defaultZone: http://discovery:8761/eureka/
+      defaultZone: http://discovery1:8761/eureka/,http://discovery2:8761/eureka/
     healthcheck:
       enabled: true
 flyway:
