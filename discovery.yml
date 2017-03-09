@@ -9,8 +9,8 @@ eureka:
     statusPageUrlPath: ${management.contextPath}/info
     healthCheckUrlPath: ${management.contextPath}/health
   client:
-    register-with-eureka: false
-    fetchRegistry: false 
+    register-with-eureka: true
+    fetchRegistry: true 
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
     healthcheck:
