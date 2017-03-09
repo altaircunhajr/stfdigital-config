@@ -20,13 +20,7 @@ spring:
     config:
       server:
         prefix: configuration
-  boot:
-    admin:
-      contextPath: /admin
-      discovery:
-        converter:
-          managementContextPath: /manage
-          
+
 http:
   client:
     ssl:
