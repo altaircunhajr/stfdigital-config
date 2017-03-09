@@ -10,22 +10,18 @@ eureka:
   client:
     register-with-eureka: false
     fetchRegistry: false 
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
-    healthcheck:
-      enabled: true    
+    serviceUrl.defaultZone: http://localhost:8761/eureka/
+    healthcheck.enabled: true    
 
 spring:
-  cloud:
-    config:
-      server:
-        prefix: configuration
+  cloud.config.server.prefix: configuration
+  boot.admin:
+    contextPath: /admin
+    discovery.converter.managementContextPath: /manage
 
-http:
-  client:
-    ssl:
-      trust-store: shared/truststores/truststore.jks
-      trust-store-password: changeit
+http.client.ssl:
+  trust-store: shared/truststores/truststore.jks
+  trust-store-password: changeit
 
 turbine:
   appConfig: discovery,documents,processos,autuacao,distribuicao,peticionamento,recebimento
