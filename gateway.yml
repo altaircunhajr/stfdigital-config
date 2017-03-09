@@ -21,7 +21,7 @@ zuul:
   sensitive-headers: 
   routes:
     discovery:
-      url: http://discovery1:8761,http://discovery2:8761
+      url: http://discovery:8761
 
 # Aumentando o timeout do gateway
 hystrix.command.default.execution.isolation.thread.timeoutInMilliseconds: 60000
