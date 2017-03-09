@@ -1,5 +1,0 @@
-eureka:
-  shouldUseDns: true
-  eurekaServer.domainName: default.svc.cluster.testes
-  eurekaServer.port: 8761
-  eurekaServer.context: eureka
