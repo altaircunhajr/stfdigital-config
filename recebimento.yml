@@ -5,6 +5,4 @@ spring.data.elasticsearch.cluster-nodes: elasticsearch:9300
 
 flyway.custom-migration.enabled: true
 
-spring.cloud.stream.bindings:
-  documentoRecebidoIn.destination: documento.recebido
-  documentoRecebidoOut.destination: documento.recebido
+spring.cloud.stream.bindings.documentoRecebidoIn.destination: documento.recebido
