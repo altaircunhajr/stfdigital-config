@@ -1,0 +1,10 @@
+eureka:
+  instance:
+    preferIpAddress: true
+    statusPageUrlPath: ${management.contextPath}/info
+    healthCheckUrlPath: ${management.contextPath}/health
+  client: 
+    serviceUrl:
+      defaultZone: http://discovery1:8761/eureka/,http://discovery2:8761/eureka/
+    healthcheck:
+      enabled: true
