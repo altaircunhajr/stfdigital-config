@@ -32,7 +32,13 @@ eureka:
     preferIpAddress: true
     statusPageUrlPath: ${management.contextPath}/info
     healthCheckUrlPath: ${management.contextPath}/health
-  client: 
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    useDnsForFetchingServiceUrls: true
+    eurekaServerDNSName: discovery
+    eurekaServerPort: 8761
+    eurekaServerURLContext: eureka    
     serviceUrl:
       defaultZone: http://discovery:8761/eureka/
     healthcheck:
