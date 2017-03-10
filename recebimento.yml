@@ -7,4 +7,4 @@ flyway.custom-migration.enabled: true
 
 spring.cloud.stream.bindings.documentoRecebidoIn.destination: documento.recebido
 
-spring.cloud.stream.rabbit.bindings.documentoRecebidoIn.consumer.republishToDlq: true
+spring.cloud.stream.rabbit.bindings.documentoRecebidoIn.consumer.requeueRejected: true
