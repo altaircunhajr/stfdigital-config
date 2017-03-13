@@ -1,4 +1,7 @@
-description: Autuacao
+info
+  app
+    name: Autuacao
+    description: STFDigital Autuacao-Autuacao 
 server.port: 8092
   
 integracao.url-ambiente: http://sistemast.stf.jus.br
