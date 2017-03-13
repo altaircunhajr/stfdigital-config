@@ -1,3 +1,4 @@
+description: Autuacao
 server.port: 8092
   
 integracao.url-ambiente: http://sistemast.stf.jus.br
