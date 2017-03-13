@@ -1,5 +1,5 @@
-info
-  app
+info:
+  app:
     name: Autuacao
     description: STFDigital Autuacao-Autuacao 
 server.port: 8092
