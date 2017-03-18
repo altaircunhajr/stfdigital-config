@@ -17,8 +17,8 @@ flyway:
     - flywayrecebimento
     - recebimento
   initSqls:
-    - CREATE USER flywayrecebimento IDENTIFIED BY flywayrecebimento
-    - CREATE USER recebimento IDENTIFIED BY recebimento
+    - 'CREATE USER flywayrecebimento IDENTIFIED BY flywayrecebimento'
+    - 'CREATE USER recebimento IDENTIFIED BY recebimento'
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
