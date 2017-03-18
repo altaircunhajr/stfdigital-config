@@ -13,12 +13,10 @@ flyway:
   url: jdbc:oracle:thin:@docker:1521/xe
   user: SYSTEM
   password: oracle
-  schemas: 
-    - flywayrecebimento
-    - recebimento
+  schemas: flywayrecebimento
   initSqls:
-    - 'CREATE USER flywayrecebimento IDENTIFIED BY flywayrecebimento'
-    - 'CREATE USER recebimento IDENTIFIED BY recebimento'
+    - CREATE USER flywayrecebimento IDENTIFIED BY flywayrecebimento
+    - CREATE USER recebimento IDENTIFIED BY recebimento
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
