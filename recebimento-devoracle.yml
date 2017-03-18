@@ -14,7 +14,7 @@ flyway:
   user: SYSTEM
   password: oracle
   schemas: flywayrecebimento
-  initSqls: CREATE USER 'RECEBIMENTO' IDENTIFIED BY 'recebimento' ACCOUNT UNLOCK; ALTER USER 'SYSTEM' quota unlimited on 'SYSTEM'
+  initSqls: CREATE USER RECEBIMENTO IDENTIFIED BY recebimento ACCOUNT UNLOCK; ALTER USER SYSTEM quota unlimited on SYSTEM;
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
