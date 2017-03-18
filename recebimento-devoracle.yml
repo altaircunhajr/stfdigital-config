@@ -16,7 +16,7 @@ flyway:
   schemas: 
     - flywayrecebimento
     - recebimento
-  init-sqls:
+  initSqls:
     - CREATE USER flywayrecebimento IDENTIFIED BY flywayrecebimento
     - CREATE USER recebimento IDENTIFIED BY recebimento
   locations:
