@@ -9,9 +9,10 @@ spring:
     password:
     schema:
       - classpath:db-development/schema.sql
+    data:
       - classpath:db-development/data.sql 
   jpa:
     generate-ddl: true
     hibernate:
       ddl-auto: create-drop
-      use-new-id-generator-mappings: true      
+      
