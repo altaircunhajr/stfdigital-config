@@ -14,7 +14,7 @@ flyway:
   user: SYSTEM
   password: oracle
   schemas: flywayrecebimento
-  initSqls: CREATE USER recebimento IDENTIFIED BY recebimento
+  initSqls: CREATE USER RECEBIMENTO IDENTIFIED BY recebimento
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
