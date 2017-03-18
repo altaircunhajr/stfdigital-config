@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:oracle:thin:@docker:1521/xe
-    username: SYSTEM
+    username: SYS
     password: oracle
     initialize: false
   jpa:
@@ -11,7 +11,7 @@ spring:
  
 flyway:
   url: jdbc:oracle:thin:@docker:1521/xe
-  user: SYSTEM
+  user: SYS
   password: oracle
   locations:
     - classpath:db/migration
