@@ -7,8 +7,8 @@ spring:
     username: sa
     password:
     schema:
-      - classpath:db-development/schema.sql
       - classpath:db-development/import.sql 
+      - classpath:db-development/schema.sql
   jpa:
     hibernate:
       ddl-auto: create-drop
