@@ -16,6 +16,7 @@ flyway:
   schemas: 
     - flywayrecebimento
     - recebimento
+  initOnMigrate: true
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
