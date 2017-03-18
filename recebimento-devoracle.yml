@@ -13,7 +13,9 @@ flyway:
   url: jdbc:oracle:thin:@docker:1521/xe
   user: SYSTEM
   password: oracle
-  schemas: flywayrecebimento
+  schemas: 
+    - flywayrecebimento
+    - recebimento
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
