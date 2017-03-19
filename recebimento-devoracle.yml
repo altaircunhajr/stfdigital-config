@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:oracle:thin:@docker:1521/xe
-    username: SYSTEM
+    username: recebimento
     password: oracle
     initialize: false
   jpa:
@@ -11,12 +11,8 @@ spring:
  
 flyway:
   url: jdbc:oracle:thin:@docker:1521/xe
-  user: SYSTEM
+  user: flywayrecebimento
   password: oracle
-  schemas: flywayrecebimento
-  initSqls: 
-    - CREATE USER RECEBIMENTO IDENTIFIED BY recebimento ACCOUNT UNLOCK
-    - ALTER USER SYSTEM quota unlimited on SYSTEM
   locations:
     - classpath:db/migration
     - classpath:db/structure/flyway/callbacks
