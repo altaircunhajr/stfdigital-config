@@ -11,7 +11,7 @@ spring:
  
 flyway:
   url: jdbc:oracle:thin:@docker:1521/xe
-  user: usuarioflyway
+  user: flywayrecebimento
   password: oracle
   locations:
     - classpath:db/migration
