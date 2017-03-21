@@ -6,7 +6,7 @@ spring:
     initialize: false
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
-    activiti:
+  activiti:
       database-schema: activitiautuacao
  
 flyway:
