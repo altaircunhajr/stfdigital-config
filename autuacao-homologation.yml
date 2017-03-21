@@ -16,4 +16,4 @@ flyway:
   locations:
    - classpath:db/migration
    - classpath:db/structure/flyway/callbacks
-integracao.url-ambiente: '{cipher}AQCT9xepehvcGGtToQG7LCUXDlvaoPrNwIGWRUr0bRB9JUJd+QX3A411YD5Xv4TmD1abxJK9Cs/BqfbhfR6EaVcACKYf3myT+CdIudk6w9ZYrhwfs2bFImls1D4UfjnsdHv/bpE1GVldLMvldazuVttMtm1ZLEwxzs/gRyqFbBmOK93UdSeTqBbrijgIBHpaOox7jm8t1Q/GBJc8Sx+K+JSIs4OxVBMXCd0wdbGsgtAstAPHSWpLpyw+MW3NAYlOVBgWQgysLvqRkQ7oZWuM7042jLcUPwKY42AYP7SBZaoKSuyXZoI0YwxdqyKHGnrs+0H6qEHe4xzwVt4NVODFm3Iwjnf+gb4/ErnDpy2FSmMO64L4dKG2dUxYWjwjeEQ7DeZ8/zf+d95D6OPMPl/xvBoh'
+integracao.url-ambiente: https://sistemast.stf.jus.br/
