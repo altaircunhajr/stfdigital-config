@@ -16,4 +16,4 @@ flyway:
   locations:
    - classpath:db/migration
    - classpath:db/structure/flyway/callbacks
-integracao.url-ambiente: http://sistemash.stf.jus.br
+integracao.url-ambiente: http://sistemast.stf.jus.br
