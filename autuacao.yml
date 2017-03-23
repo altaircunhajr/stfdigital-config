@@ -3,5 +3,7 @@ info:
     name: Autuacao
     description: STFDigital Autuacao-Autuacao 
 server.port: 8092
+
+spring.activiti.database-schema: activitiautuacao
   
 integracao.url-ambiente: http://sistemast.stf.jus.br
