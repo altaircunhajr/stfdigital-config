@@ -6,8 +6,6 @@ spring:
     initialize: false
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
-  activiti:
-      database-schema: activitiautuacao
  
 flyway:
   url: jdbc:oracle:thin:@oracle:1521/xe
