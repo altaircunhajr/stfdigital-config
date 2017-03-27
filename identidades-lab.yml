@@ -1,7 +1,7 @@
 spring:
   datasource:
     url: jdbc:oracle:thin:@oracle:1521/xe
-    username: system
+    username: usuarioidentidades
     password: oracle
     initialize: false
   jpa:
@@ -9,7 +9,7 @@ spring:
     
 flyway:
   url: jdbc:oracle:thin:@oracle:1521/xe
-  user: system
+  user: flywayidentidades
   password: oracle
   locations:
    - classpath:db/migration
