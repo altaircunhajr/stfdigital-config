@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@oracle:1521/xe
+    username: usuariorecebimento
+    password: oracle
+    initialize: false
+  jpa:
+    database-platform: org.hibernate.dialect.Oracle10gDialect
+  activiti:
+    database-schema: '{cipher}AQAxrnJenT2/UyOVHA63bkfHpp81KTZkwZfFIlzsxWda4q2M7eFv7NmO7J8rdse8mf9Ob38wMb4SRIzhl1WckAtnw51hya+2u6Yeeg51E1vPfXe+/Jvxi5uT7zywPiCCVqNt0srFbYWaK+owboN66PoQwTQiHYFR4+EzE8c1eH3dN4qVy0R9cUp9r2hRIfZVu6XgbotPKp5qnlV6EMtMESGch9GGBc1DB4panXmjVbKLMj0gD0fAakpdE9bZpiT1Fg67oZzQMzChk54x+BmF8yjjSuj0e2s5m8/yDhCbPZmGnl7dtzMQRA1bFNbzUBXUnvhZVVRKkNUbK7l6d+k92VxwAWua0NOkKyTWTpLBMU6e0EfV1NUMHQ85zdBg/3ybCUo='
+    database-schema-update: true
+    
+flyway:
+  url: jdbc:oracle:thin:@oracle:1521/xe
+  user: flywayrecebimento
+  password: oracle
+  locations:
+   - classpath:db/migration
+   - classpath:db/structure/flyway/callbacks
