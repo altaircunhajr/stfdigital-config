@@ -1,0 +1,20 @@
+server:
+  port: 8093
+  
+spring:
+  datasource:
+    initialize: true
+    url: jdbc:h2:mem:${spring.application.name};MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+    password:
+    schema:
+      - classpath:development/database/schema.sql
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate.hbm2ddl.import_files: development/database/data.sql
+
+      
+      
