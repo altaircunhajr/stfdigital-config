@@ -7,3 +7,9 @@ spring:
       port: 9042
       keyspace-name: documents
       contact-points: cassandra
+  datasource:
+    hikari:
+      connection-timeout: 120000
+      maximum-pool-size: 20
+      max-lifetime: 120000
+      pool-name: documents-ds
