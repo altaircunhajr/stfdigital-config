@@ -8,3 +8,11 @@ flyway.custom-migration.enabled: true
 spring.cloud.stream.bindings.documentoRecebidoIn.destination: documento.recebido
 
 spring.cloud.stream.rabbit.bindings.documentoRecebidoIn.consumer.requeueRejected: true
+
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 120000
+      maximum-pool-size: 20
+      max-lifetime: 120000
+      pool-name: recebimento-ds
