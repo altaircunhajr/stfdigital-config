@@ -7,3 +7,11 @@ server.port: 8092
 spring.activiti.database-schema: activitiautuacao
   
 integracao.url-ambiente: http://sistemast.stf.jus.br
+
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 120000
+      maximum-pool-size: 20
+      max-lifetime: 120000
+      pool-name: autuacao-ds
