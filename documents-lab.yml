@@ -19,8 +19,8 @@ onlyoffice:
   server:
     address: https://stfdigital2:30443
   integration:
-    address: stfdigital2.stf.jus.br
-    port: 30443
+    address: onlyoffice
+    port: 443
   documentserver:
     host: stfdigital2.stf.jus.br
     port: 30790
