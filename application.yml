@@ -12,6 +12,7 @@ spring:
     port: 5672
     listener:
       retry:
+        enabled: true
         max-attempts: 100
 
 security:
