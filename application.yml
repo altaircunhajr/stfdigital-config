@@ -10,10 +10,12 @@ spring:
   rabbitmq:
     host: rabbit
     port: 5672
-    listener:
-      retry:
-        enabled: true
-        max-attempts: 100
+  cloud:
+    stream:
+      bindings:
+        input:
+          consumer:
+            maxAttempts: 1000
 
 security:
   oauth2:
