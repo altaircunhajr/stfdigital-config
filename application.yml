@@ -16,9 +16,10 @@ spring:
         max-attempts: 100
   cloud:
     stream:
-      default:
-        consumer:
-          maxAttempts: 1000
+      bindings:
+        documentoRecebido:
+          consumer:
+            maxAttempts: 100
 
 security:
   oauth2:
