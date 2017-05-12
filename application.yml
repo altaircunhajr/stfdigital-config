@@ -12,10 +12,9 @@ spring:
     port: 5672
   cloud:
     stream:
-      bindings:
-        input:
-          consumer:
-            maxAttempts: 1000
+      default:
+        consumer:
+          maxAttempts: 1000
 
 security:
   oauth2:
