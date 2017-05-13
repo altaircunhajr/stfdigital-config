@@ -23,6 +23,7 @@ spring:
         "[documento.recebido]":
           consumer:
             maxAttempts: 100
+          group: documentoRecebimento
 
 security:
   oauth2:
