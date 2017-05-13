@@ -20,6 +20,9 @@ spring:
         documentoRecebido:
           consumer:
             maxAttempts: 100
+        "[bar.com]":
+          consumer:
+            maxAttempts: 100
 
 security:
   oauth2:
