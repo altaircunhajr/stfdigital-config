@@ -20,7 +20,7 @@ spring:
         documentoRecebido:
           consumer:
             maxAttempts: 100
-        "[bar.com]":
+        "[documento.recebido]":
           consumer:
             maxAttempts: 100
 
