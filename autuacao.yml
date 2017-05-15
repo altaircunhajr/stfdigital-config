@@ -7,3 +7,16 @@ server.port: 8092
 spring.activiti.database-schema: activitiautuacao
   
 integracao.url-ambiente: http://sistemast.stf.jus.br
+
+spring:
+  cloud:
+    stream:
+      bindings:
+        "[documento.recebido]":
+          group: ${spring.application.name}
+      rabbit:
+        bindings:
+          "[documento.recebido]":
+            consumer:
+              autoBindDlq: true
+              republishToDlq: true
