@@ -1,3 +1,5 @@
 onlyoffice: 
   server:
     address: https://docker
+  integration:
+    address: docker

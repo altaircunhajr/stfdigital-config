@@ -1,2 +1,9 @@
 server:
   port: 8095
+spring:
+  datasource:
+    hikari:
+      connection-timeout: 120000
+      maximum-pool-size: 20
+      max-lifetime: 120000
+      pool-name: identidades-ds

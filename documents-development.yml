@@ -1,3 +1,5 @@
 onlyoffice: 
   server:
     address: https://onlyofficet.stf.jus.br
+  integration:
+    address: onlyofficet.stf.jus.br

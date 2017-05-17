@@ -14,3 +14,4 @@ flyway:
   locations:
    - classpath:db/migration
    - classpath:db/structure/flyway/callbacks
+seguranca.cas.url: '{cipher}AQCcFKM3y7w5Qa9VALxCGF2yNLRF1m557AQLTUhxxIt/xLhIgOhnfwxBLChCc95CiqVr3pevzYXQMOaWAHTe5WTs1E7HLY+pP5LDd/2+54hgYEtly81Ku1hGK+3/jZPTYsT7DOX80vTvlcYNEHksS1j72wmAD7YJJx3j6aS2hpN1VfWSTHk8AlDuB5TZRYrJ2WML73FaaJyR8V3dGgoQLRL69m+I5NGD098cHhvssYr8DO+nVk0r3jeILP8O+v0qd/5zb5axc/bstPccL90vf8O/MtK/qHv9GDpMOa6mMgFJLyrcxoiO+csRP0Ly9wjm+J6znpzVl7MezeTT9gjXaGWy5qnuirTT9RNBy2vkhMjy03tmsZjUF73vvhJDK/F5WAOG0TEMYmPmFdgX3VbPcs7COZ//IjNsFD7P5bR1i+oe1g=='
