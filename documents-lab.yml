@@ -5,7 +5,7 @@ spring:
     password: oracle
     initialize: false
     hikari:
-      maximum-pool-size: 2
+      maximum-pool-size: 5
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
  
