@@ -4,6 +4,8 @@ spring:
     username: usuariodocuments
     password: oracle
     initialize: false
+    hikari:
+      maximum-pool-size: 2
   jpa:
     database-platform: org.hibernate.dialect.Oracle10gDialect
  
