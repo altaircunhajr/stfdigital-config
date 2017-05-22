@@ -15,6 +15,8 @@ eureka:
     secure-port-enabled: true
     secure-port: ${server.port}
     
+management.security.enabled : true
+    
 zuul:
   sensitive-headers: 
   routes:
