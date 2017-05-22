@@ -28,4 +28,4 @@ ribbon:
   ReadTimeout: 60000
   
 gateway:
-  access-manage-rule: hasIpAdress('172.22.0.0/16') or hasIpAdress('10.200.0.0/16') or hasAuthority('administrador')
+  access-manage-rule: hasIpAdress('172.22.0.0/16') or hasIpAdress('10.200.0.0/16') or hasRole('administrador')
