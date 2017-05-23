@@ -18,7 +18,7 @@ eureka:
 management:
   security:
     enabled : true
-    roles: role_administrador
+    roles: administrador
     
 zuul:
   sensitive-headers: 
