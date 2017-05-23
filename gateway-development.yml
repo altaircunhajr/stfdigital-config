@@ -1,6 +1,7 @@
 management:
   security:
     enabled: true
-    roles: administrador
+    roles: 
+    - administrador
     
 gateway.access-manage-rule: 'hasIpAddress("0.0.0.0/0")'
