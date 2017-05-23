@@ -1,0 +1,6 @@
+management:
+  security:
+    enabled: false
+    roles: ''
+    
+gateway.access-manage-rule: 'hasIpAddress("0.0.0.0/0")'
