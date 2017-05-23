@@ -1,14 +1,8 @@
 spring:
   datasource:
-    initialize: true
-    url: jdbc:h2:mem:${spring.application.name};MODE=Oracle;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
-    username: sa
-    password:
-    schema:
-      - classpath:development/database/schema.sql
+    url: '{cipher}AQAyOUyGOVJVeEwdutqi/8j39i/k6O6mIVHDbYA8zq5gNWNA6bbSXmZmV3jnYY48PlzluwWohgWmIIQB5nl+eZO4MLjm7D9yX+r6EEMJL4S+cxF+4V0uvKu3K/JmIUkynZ5w4IFpYE985Z32WbZ6xIFEcp21mWKltjDX8dGLM6GmlFuFHblk2En6U2AARSSoHpeiByd7IqQi9OURER3CZRsIEC4n0d8JpkFrdTn2EK/WoyFFP+NHy1AkyF0CIs3kw1nZcaqreL4DpYbUGN7Vf5nLLpaZG/8NUvQI8XpX2vySgDaYyjGJBgYxMd+rfipKtYNWywldr1wtanzx+7OUb9iv4P855w+E8lrjirRQH7t5D0Hno8EZopSYVLTPajqqtL03fXHI9g1CgrzTw1uMLlv0O2sX1S0bnZ4V4Y6UnWG3zxMZchmdw8lY8bRSqH5nX69BfZSqmmkYFU6SWwpX2XnGEv/5ZSW8/8rlu/te3vFQ47c6VP3gIzyuBV9CVp9Y05IcIl0z4JsbN4AhquU3yp8gLJ5Xbvi1AxAfg4fW99PvE4EyY24ijIMvapX+HVY85xrFSH3sdA4bFGB3X2743rQcA+e8TBQHOF2UuBzU0dxdNn8mFoMkoN+BTgL7tDQtTQU0kRlK201dAX+TBrEm32Vmr5xe0Ed8qKgnFJt7RopaP+OUTK6m2DOq0EoBBb0tDiYrxgWbVEKuRji+yWwBpDRRMZayL6DZ9R6Z/vPsTTnr0++8E46PkIIkjJ1VqaOv+thvNUwD12wnb5Vv6dVDsVTRSFL3eUa7pZEkeJUOTpQ4mg=='
+    username: '{cipher}AQCCDzzFNfNDhGq/qWvqod006zvzFXKUXtYloK68azdzbnkPWREgZb6JDM4JkWqGBSaGd6gTIbNSd8SzlPTPu8vxr64Fuh6okIdcB2FFTQJwdhdfe6Da8D6o9Us10eeoVqGpqbePMxnm8qfITrvgX8uCiCA3yNECtRb4OHO8jxCndZtpg6Ajyl3JN0I+Z2TakAXT1unHPR514ctqTVdxyiEzY8UyH3S5oAJcZPBH4fmuM3B2W0JOkHmnIY34rviHE8XYC8U92VVw0vzl1kCecJkOU+zfnI9wurf8n5Q5/2OaZdPMjH36pfgWqIcMaskyVeSfPBB91s+DI8JKqFsYdtAbiVbuseWyoKy6PParWrcbJBnyhtah9qRNuN7/LYzVz0E='
+    password: '{cipher}AQAFljEduSLWIOZtK0ACrPlbvjBLPnmRWXFGWU2eADn736cCVVC3kvL6tZKbDerumpbMRyxGyFzhVW/yzXwQ3pyhRuQuLNk2o9NlfbUIzbNqqhpANbNtYoPhMRaHEJnXgC1sjH2sugDHyqY8/F8G9g0i4WZCj9WwJQe/HLuBOifH9o55/QYd/j6Y6+wszn+iv6CUTEyXiQs+tA42MADFr0m90phiVgl+OeHF/I709ylwMYEgL4rQ391eZJNoXoIOfYcE9brUS+r9TiCVtJYuxuMevN4ESc/kUR7tDP5qurLXU/EPol/FplpKBOsbaiqmSWXTq52lpnvsgpDaM2eY78qU+M5d/ykixoRNfwrMoVhsIikU1ol3gVSpPW/evx7vf9c9EFxwBNDsH80qeFPURkMh'
+    initialize: false
   jpa:
-    generate-ddl: true
-    hibernate:
-      ddl-auto: create-drop
-    properties:
-      hibernate.hbm2ddl.import_files: development/database/data.sql  
+    database-platform: org.hibernate.dialect.Oracle10gDialect
