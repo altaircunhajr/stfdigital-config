@@ -17,5 +17,4 @@ spring:
       pool-name: autuacao-ds
       
 hystrix.command.default.execution.isolation:
-  strategy: SEMAPHORE
   thread.timeoutInMilliseconds: 20000
