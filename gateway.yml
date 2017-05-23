@@ -15,7 +15,10 @@ eureka:
     secure-port-enabled: true
     secure-port: ${server.port}
     
-management.security.enabled : true
+management:
+  security:
+    enabled : true
+    roles: role_administrador
     
 zuul:
   sensitive-headers: 
