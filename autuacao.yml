@@ -15,3 +15,7 @@ spring:
       maximum-pool-size: 20
       max-lifetime: 120000
       pool-name: autuacao-ds
+      
+hystrix.command.default.execution.isolation:
+  strategy: SEMAPHORE
+  thread.timeoutInMilliseconds: 20000
