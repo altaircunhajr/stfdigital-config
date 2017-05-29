@@ -18,6 +18,3 @@ spring:
       
 hystrix.command.default.execution.isolation:
   thread.timeoutInMilliseconds: 20000
-
-flyway:
-  out-of-order: true
